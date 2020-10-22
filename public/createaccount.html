@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/page-createaccount.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('/public/images/background2.jpg');
+          background-repeat: no-repeat;
+        }
+        </style>
+    <form action="action_page.php">
+        <div id="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+        <div class="registerbox">
+          <div class="username">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" required>
+          </div>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter password" name="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat password" name="psw-repeat" required>
+        </div>
+          <div class="terms">
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          </div>
+          <div class="buttons-container"> 
+            <a class="cancel" href="/public/login.html">
+                Cancel
+            </a>
+            <a class="register" href="/public/register.html">
+                Register
+            </a>
+        </div>
+        </div>
+      </form>
+</body>
+
+</html>

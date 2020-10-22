@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+    <link rel="stylesheet" href="/public/styles/page-dungeon.css">
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+</head>
+<body>
+  <style>
+    body {
+      background-image: url('images/background2.jpg');
+      background-repeat: no-repeat;
+    }
+  </style>
+  <a href="/public/menu.html">
+    <img class="backbutton" src="/public/images/backbutton.jpg" alt="Voltar">
+  </a>
+  <div id="container">
+    <div id="playerbox">
+      <h1 class="nickname">Player</h1>
+      <img src="/public/images/playeravatar.png" alt="Player Avatar">   
+      <div class="playerstatus">
+        <progress id="health" value="20" max="20"></progress>
+        <h2 class="playerhp">HP:0</h2>
+        <h2 class="playeratk">ATK:0</h2>
+        <h2 class="playerdef">DEF:0</h2>
+        <h2 class="playergold">GOLD:0</h2>
+      </div>
+    </div>
+    <div id="combatbox">
+      <div class="button-container">
+        <img class="attack"src="/public/images/attack.png" alt="attack button" onclick="pressAttack()">
+          <h1 class="turntext">TURN</h1>
+          <img class="defense"src="/public/images/defense.png" alt="defense button" onclick="pressDefense()">
+      </div>
+    </div>
+    <div id="enemybox">
+      <img id="intentDefense"src="/public/images/defense.png" alt="defense intent">
+      <img id="intentAttack" src="/public/images/attack.png" alt="attack intent">
+      <h1>Enemy</h1>
+      <img class ="enemyAvatar" src="/public/images/enemy.png" alt="Enemy Avatar">
+      <div class="enemystatus">
+        <progress id="enemyhealth" value="10" max="10"></progress>
+        <h2 class="enemyhp">HP:0</h2>
+        <h2 class="enemyatk">ATK:0</h2>
+        <h2 class="enemydef">DEF:0</h2>
+      </div>
+    </div>
+  </div>
+  <script src="/script/dungeon.js"></script>
+</body>
+
+</html>

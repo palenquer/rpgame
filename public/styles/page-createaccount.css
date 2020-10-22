@@ -1,0 +1,93 @@
+#container {
+    border-style: solid;
+    border-color: #4b4b4b;
+    width: 90vw;
+    max-width: 700px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20rem;
+    border-radius: 1rem;
+    opacity: 0.7;
+}
+#container:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+#container h1 {
+    font: 600 2.5rem 'Press Start 2P';
+    color: #4b4b4b;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+#container p, #container a {
+    text-decoration: none;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 600 1.2rem 'Press Start 2P';
+    color: #4b4b4b;
+}
+#container a {
+    margin-right: 0rem;
+}
+#container p {
+    margin-bottom: 1rem;
+}
+#container label {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    color: #4b4b4b;
+}
+#container .registerbox .username {
+    margin-top: 2rem;
+}
+#container input {
+    border: 1px solid #4b4b4b;
+    color: #4b4b4b;
+    padding: 1rem;
+    width: 30rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    margin: 2rem 0rem;
+}   
+#container .terms p a {
+    color: blue;
+}
+#container .terms p a:hover {
+    color: rgb(112, 110, 240);
+}
+#container .buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 3.2rem 0;
+}
+#container .buttons-container a {
+    width: 20rem;
+    height: 4.5rem;
+    border-radius: 0.5rem;
+    margin-right: 1.6rem;
+
+    font: 500 1.2rem 'Press Start 2P';
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: rgb(240, 240, 240);
+}
+#container .buttons-container .cancel,
+#container .buttons-container .register {
+    background-color: #be2e2e;
+    transition: background 0.5s;
+}
+#container .buttons-container .register {
+    margin-right: 0rem;
+}
+#container .buttons-container a.cancel:hover,
+#container .buttons-container a.register:hover {
+    background-color: #ff6565;
+}

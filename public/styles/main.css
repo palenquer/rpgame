@@ -1,0 +1,25 @@
+:root {
+    font-size: 60%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body,
+input,
+button,
+textarea {
+    font-weight: 200;
+    font-family: 'Press Start 2P';
+    font-size: 1rem;
+    color: rgb(252, 252, 252);
+}
+
+
